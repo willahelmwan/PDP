@@ -1,0 +1,6 @@
+0 hours 10 minutes spent this session
+2017-04-15
+
+1. Replaced all HashMap with TreeMap for better performance.
+
+2. Making sure set11 repostitory represents newest code

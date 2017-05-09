@@ -1,0 +1,57 @@
+TA-1 Name:- Rohit
+TA-2 Name:- Wenjun
+
+
+Student1 CCIS ID:- williamwan
+
+Question 1 :-
+
+Design Grade:- C
+TA Comments on Design:-
+	1. Wrong implementation for CallExp.value. Should keep a copy for env inside of CallExpClass.value.
+	2. Should have more clarity for the submission (penalized for not understanding)
+
+Presentation Grade:- C
+TA Comments on Presentation:-
+	1. Asked about Programs.main, answered.
+	2. Asked about what are free variables
+		- student was confused about f(x) x  x, answered after TA's hint
+		- student was confused about whether a constant that defined in program but after where it is used is free variable or not
+
+
+Question 2 :-
+
+Design Grade:- C
+TA Comments on Design:-
+	1. Programs.undefined may not have the right result in certain situations.
+	2. Should have more clarity for the submission (penalized for not understanding)
+
+Presentation Grade:- C
+TA Comments on Presentation:-
+	1. Asked about Programs.undefined, student was confused.
+
+
+
+Student2 CCIS ID:- bchayes
+
+Question 1 :-
+
+Design Grade:- B
+TA Comments on Design:-
+	1. Wrong implementation for CallExp.value. Should keep a copy for env inside of CallExpClass.value.
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about the CallExpClass.value, answered.
+	2. Asked about Programs.main, satisfactory answer.
+
+
+Question 2 :-
+
+Design Grade:- B
+TA Comments on Design:-
+	1. Programs.undefined may not have the right result in certain situations.
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about Programs.undefined, answered.

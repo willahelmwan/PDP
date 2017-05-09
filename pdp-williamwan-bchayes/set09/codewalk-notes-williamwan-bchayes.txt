@@ -1,0 +1,61 @@
+TA-1 Name:- Rohit
+TA-2 Name:- Wenjun
+
+
+Student1 CCIS ID:- williamwan
+
+Question 1 :-
+
+Design Grade:- A
+TA Comments on Design:-
+	1. Respected the given interfaces.
+	2. Defined static factory methods.
+	3. Implemented RacketList as immutable.
+
+Presentation Grade:- AB
+TA Comments on Presentation:-
+	1. Asked about class diagram, satisfactory answer.
+	2. Asked about implementation for RacketList1 functio cons, student was confused about the three constructors for RacketList1.
+
+
+Question 2 :-
+
+Design Grade:- AB
+TA Comments on Design:-
+	1. Could have a short comment on different parts of one method
+	2. Missing halting measure for class Schedules function hasPath
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about why do we need interfaces and benefit of having interfaces, student was on the right track, but was not clearly enough.
+	2. Asked about running time for hasPath, satisfactory answer.
+
+
+Student2 CCIS ID:- bchayes
+
+Question 1 :-
+
+Design Grade:- A
+TA Comments on Design:-
+	1. Respected the given interfaces.
+	2. Defined static factory methods.
+	3. Implemented RacketList as immutable.
+
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about why keep static factory methods, satisfactory answer.
+
+
+Question 2 :-
+
+Design Grade:- AB
+TA Comments on Design:-
+	1. Could have a short comment on different parts of one method
+	2. Missing halting measure for class Schedules function hasPath
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about why do we need interfaces and benefit of having interfaces, satisfactory answer.
+	2. Asked about running time for canGetThere (using BFS), satisfactory answer. 
+	2. Asked about running time for hasPath, satisfactory answer.

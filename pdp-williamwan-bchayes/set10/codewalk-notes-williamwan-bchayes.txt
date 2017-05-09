@@ -1,0 +1,60 @@
+TA-1 Name:- Rohit
+TA-2 Name:- Wenjun
+
+
+Student1 CCIS ID:- williamwan
+
+Question 1 :-
+
+Design Grade:- C
+TA Comments on Design:-
+	1. Wrong implementation for IfExpClass.value  (Please refer to the rule for if expressions)
+	2. Wrong LambdaExp1.value (Please refer to the rule for lambda)
+	3. Wrong CallExp1.value implementation (Please refer to the four rules for call expressions)
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about implementation for isX() methods, satisfactory answer.
+	2. Asked about why created ExpClass as an abstract class, answered.
+	3. Asked about why not implement ExpClass as an interface, answered.
+
+
+Question 2 :-
+
+Design Grade:- B
+TA Comments on Design:-
+	1. Good to use of IMap to implement env as immutable
+	2. Wrong Programs.run implementation (Please refer to the rules for program)
+
+Presentation Grade:- AB
+TA Comments on Presentation:-
+	1. Asked about the example main method, with 100 as input, student was a bit confused.
+
+
+
+Student2 CCIS ID:- bchayes
+
+Question 1 :-
+
+Design Grade:- C
+TA Comments on Design:-
+	1. Wrong implementation for IfExpClass.value  (Please refer to the rule for if expressions)
+	2. Wrong LambdaExp1.value (Please refer to the rule for lambda)
+	3. Wrong CallExp1.value implementation (Please refer to the four rules for call expressions)
+
+Presentation Grade:- AB
+TA Comments on Presentation:-
+	1. Can Java classes extend multiple classes? Student was confused (please review course materials) 
+
+
+Question 2 :-
+
+Design Grade:- B
+TA Comments on Design:-
+	1. Good to use of IMap to implement env as immutable
+	2. Wrong Programs.run implementation (Please refer to the rules for program)
+
+Presentation Grade:- AB
+TA Comments on Presentation:-
+	1. Ased about run method and its helpers in Prgrams class, satisfactory answer.
+	2. Asked about the example main method, with 100 as input, student was a bit confused.

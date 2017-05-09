@@ -1,0 +1,48 @@
+Set09 README
+
+File Layout
+--------------------------------------------------------------------------------
+Class.java - Interface for Class
+
+    - this would be the equivalent of the provides in DrRacket, but only for 
+      class methods
+  
+    - we are not allowed to change the interface files for this project
+
+Class(1).java - Class definition for object and data functions, and it will
+                implement the interface defined in the Class.java file. Java
+				requires these to be in separate files. You cannot use the 
+				same name for the interface as the class. Ex You can't define
+				the UTC class, if the interface is already called UTC.
+
+    - This defines how the data is structured for the object
+    - This holds the method definitions for the interface, any public method 
+	  here has to be in the Class.java (interface)
+  
+    * We are not allowed to edit the interface files (UTC.java, Flight.java, 
+      RacketList.java) so we cannot define any public methods in Class(1).java
+      beyond what is listed in those files.
+
+Class(s).java - Class Factory
+
+    - The factory will contain a function called make() which will create an 
+	  object of the class type. 
+  
+    - It was stated in the problem set we may add other functions if we so 
+	  desire to these files. If they were to swap out these files after letting 
+	  us create custom functions, they would not be able to test our program. 
+ 
+Class(H).java - Class Helper
+
+    - This is where we will put our helper functions instead, just incase they
+      decide to replace our factory next week.
+
+	  
+Compile Program
+--------------------------------------------------------------------------------
+javac *.java in directory with files
+
+
+Run Program (benchmarks)
+--------------------------------------------------------------------------------
+java benchmarks - runs some tests and benchmarks on the different functions

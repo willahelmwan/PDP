@@ -1,0 +1,38 @@
+Running test: you're already there!... PASS
+Running test: ROT isn't served by Delta... PASS
+Running test: TEN isn't served by Delta... PASS
+Running test: the empty graph is strongly connected... PASS
+Running test: deltaFlights is strongly connected... PASS
+Running test: deltaCycle is strongly connected... PASS
+Running test: deltaCycle is not strongly connected without BOS... PASS
+Running test: itinerary for DEN to DEN via Pan Am... PASS
+Running test: itinerary for BAL to BAL via Delta... PASS
+Running test: itinerary for DEN to DTW via Delta... PASS
+Running test: travel time for BOS to DTW... PASS
+Running test: itinerary for PDX to LHR via Delta... FAIL
+  actual:   (list "[Delta 0010 DEN-LHR D:20:30 A:9:45]" "[Delta 4574 LAX-DEN D:17:35 A:20:7]" "[Delta 0950 PDX-LAX D:14:18 A:16:55]")
+  expected: (list "[Delta 0950 PDX-LAX D:14:18 A:16:55]" "[Delta 4574 LAX-DEN D:17:35 A:20:7]" "[Delta 0010 DEN-LHR D:20:30 A:9:45]")
+Running test: travel time for BZN to LGA... PASS
+Running test: travel time for BZN to LHR... PASS
+Running test: travel time using deltaCycle... PASS
+Running test: benchmark2(5)... benchmark2(5): 0ms
+PASS
+Running test: benchmark2(10)... benchmark2(10): 2ms
+PASS
+Running test: benchmark2(15)... benchmark2(15): 8ms
+PASS
+Running test: benchmark2(20)... benchmark2(20): 18ms
+PASS
+Running test: benchmark2(25)... benchmark2(25): 37ms
+PASS
+Running test: benchmark2(30)... benchmark2(30): 85ms
+PASS
+Running test: benchmark2(35)... benchmark2(35): 177ms
+PASS
+Running test: benchmark2(40)... benchmark2(40): 334ms
+PASS
+Running test: benchmark2(45)... benchmark2(45): 585ms
+PASS
+Running test: benchmark2(50)... benchmark2(50): 988ms
+PASS
+24 success(es) 1 failure(s) 0 error(s) 25 test(s) run

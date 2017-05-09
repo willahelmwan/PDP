@@ -1,0 +1,619 @@
+Running test: true is a constant... PASS
+Running test: false is a constant... PASS
+Running test: 42 is a constant... PASS
+Running test: 0 is a constant... PASS
+Running test: lambda is not a constant... PASS
+Running test: sparticus is an identifier... PASS
+Running test: true is not an identifier... PASS
+Running test: lambda identifies as such... PASS
+Running test: lambda can have many formals... PASS
+Running test: PLUS is not a lambda... PASS
+Running test: PLUS is arithmetic... PASS
+Running test: lambda is not arithmetic... PASS
+Running test: call identifies as such... PASS
+Running test: call can have lambda as operator... PASS
+Running test: call can have call as operator... PASS
+Running test: PLUS is not a call... PASS
+Running test: if identifies as such... PASS
+Running test: lambda is not an if... PASS
+Running test: false => false... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at ConstantExpClass.value(ConstantExpClass.java:41)
+	at PdpExpTests.lambda$main$18(PdpExpTests.java:128)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: 42 => 42... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at ConstantExpClass.value(ConstantExpClass.java:41)
+	at PdpExpTests.lambda$main$19(PdpExpTests.java:131)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: (λ(x) x) => function with empty env... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at LambdaExpClass.value(LambdaExpClass.java:42)
+	at PdpExpTests.lambda$main$20(PdpExpTests.java:138)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: (λ(x) x)(5010) => 5010... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at CallExpClass.value(CallExpClass.java:42)
+	at PdpExpTests.lambda$main$21(PdpExpTests.java:145)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: (λ(x) x)((λ(x) x))(5010) => 5010... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at CallExpClass.value(CallExpClass.java:42)
+	at PdpExpTests.lambda$main$22(PdpExpTests.java:154)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: 3 < 2 => false... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$main$23(PdpExpTests.java:159)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: 3 = 2 => false... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$main$24(PdpExpTests.java:163)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: 3 > 2 => true... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$main$25(PdpExpTests.java:167)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: 3 + 2 => 5... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$main$26(PdpExpTests.java:171)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: 3 - 2 => 1... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$main$27(PdpExpTests.java:175)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: 3 * 2 => 6... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$main$28(PdpExpTests.java:179)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: if true does not evaluate else branch... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at IfExpClass.value(IfExpClass.java:42)
+	at PdpExpTests.lambda$main$29(PdpExpTests.java:184)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: if false does not evaluate then branch... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$EmptyMap cannot be cast to IMap
+	at IfExpClass.value(IfExpClass.java:42)
+	at PdpExpTests.lambda$main$30(PdpExpTests.java:188)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: x * y... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$main$31(PdpExpTests.java:197)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: inc (x)... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at CallExpClass.value(CallExpClass.java:42)
+	at PdpExpTests.lambda$main$32(PdpExpTests.java:202)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: inc (inc (x))... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at CallExpClass.value(CallExpClass.java:42)
+	at PdpExpTests.lambda$main$33(PdpExpTests.java:207)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: inc (y) - inc (x)... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$main$34(PdpExpTests.java:215)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: (λ(f,x) f(f(x)))(inc,y)... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at CallExpClass.value(CallExpClass.java:42)
+	at PdpExpTests.lambda$main$35(PdpExpTests.java:226)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: y < z... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$36(PdpExpTests.java:288)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: z < y... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$36(PdpExpTests.java:288)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: y < 5... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$36(PdpExpTests.java:288)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: y = z... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$36(PdpExpTests.java:288)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: z = y... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$36(PdpExpTests.java:288)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: y = 5... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$36(PdpExpTests.java:288)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: y > z... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$36(PdpExpTests.java:288)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: z > y... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$36(PdpExpTests.java:288)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: y > 5... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$36(PdpExpTests.java:288)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: y+z... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: y-z... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: y*z... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: if y < z then 97 else 107... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at IfExpClass.value(IfExpClass.java:42)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: if y = z then 97 else 107... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at IfExpClass.value(IfExpClass.java:42)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: if x - y < x + z then 97 else 107... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at IfExpClass.value(IfExpClass.java:42)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: if x - y > x + z then 97 else 107... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at IfExpClass.value(IfExpClass.java:42)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: f (1000, 2)... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at CallExpClass.value(CallExpClass.java:42)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: y+z... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at ArithmeticExpClass.value(ArithmeticExpClass.java:78)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: f (9999, 100)... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at CallExpClass.value(CallExpClass.java:42)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: (if y < z then f else 107) (100, 10)... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at CallExpClass.value(CallExpClass.java:42)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: (λ (x,y,z) f) (1,2,3) (10, 10)... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at CallExpClass.value(CallExpClass.java:42)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: (λ (f) (λ (x) f (f, x)))((λ (f, x)   ...... ERROR
+java.util.concurrent.ExecutionException: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:86)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpExpTests.main(PdpExpTests.java:264)
+Caused by: java.lang.ClassCastException: java.util.Collections$UnmodifiableMap cannot be cast to IMap
+	at CallExpClass.value(CallExpClass.java:42)
+	at PdpExpTests.lambda$addTest$37(PdpExpTests.java:301)
+	at PdpTestSuite$TestCase.lambda$run$0(PdpTestSuite.java:84)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+18 success(es) 0 failure(s) 40 error(s) 58 test(s) run

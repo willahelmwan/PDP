@@ -1,0 +1,38 @@
+Running test: ack... FAIL
+  actual:   [n]
+  expected: []
+Running test: bst... FAIL
+  actual:   [repeat, k, n]
+  expected: []
+Running test: church... PASS
+Running test: fact... PASS
+Running test: fact2... PASS
+Running test: fib... FAIL
+  actual:   [iters]
+  expected: []
+Running test: insertionsort... FAIL
+  actual:   [m, n]
+  expected: []
+Running test: mergesort... FAIL
+  actual:   [m, n]
+  expected: []
+Running test: naive... FAIL
+  actual:   [m, n]
+  expected: []
+Running test: sieve... FAIL
+  actual:   [hi, lo]
+  expected: []
+Running test: tail... FAIL
+  actual:   [i, j, k]
+  expected: []
+Running test: bad1... FAIL
+  actual:   [i, j, k]
+  expected: [m, n, add4]
+Running test: bad2... FAIL
+  actual:   [x, y]
+  expected: [x]
+Running test: bad3... FAIL
+  actual:   [x, y]
+  expected: [x, y, M, N]
+Running test: bad4... PASS
+4 success(es) 11 failure(s) 0 error(s) 15 test(s) run

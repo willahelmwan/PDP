@@ -1,0 +1,96 @@
+Running test: ack(3,3)... FAIL
+  actual:   4
+  expected: 61
+Running test: bst(64,49,2)... ERROR
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: timed out
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:123)
+	at PdpTestSuite.runTests(PdpTestSuite.java:82)
+	at PdpQ1Tests.main(PdpQ1Tests.java:67)
+Caused by: java.lang.RuntimeException: timed out
+	at PdpTestSuite.lambda$addExternalTestCase$5(PdpTestSuite.java:63)
+	at PdpTestSuite$$Lambda$1/321001045.get(Unknown Source)
+	at PdpTestSuite$TestCase.lambda$run$6(PdpTestSuite.java:121)
+	at PdpTestSuite$TestCase$$Lambda$2/142257191.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: bst(64,81,2)... ERROR
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: timed out
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:123)
+	at PdpTestSuite.runTests(PdpTestSuite.java:82)
+	at PdpQ1Tests.main(PdpQ1Tests.java:67)
+Caused by: java.lang.RuntimeException: timed out
+	at PdpTestSuite.lambda$addExternalTestCase$5(PdpTestSuite.java:63)
+	at PdpTestSuite$$Lambda$1/321001045.get(Unknown Source)
+	at PdpTestSuite$TestCase.lambda$run$6(PdpTestSuite.java:121)
+	at PdpTestSuite$TestCase$$Lambda$2/142257191.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: church(5)... FAIL
+  actual:   java.lang.NullPointerException
+  expected: 120
+Running test: fact(11)... ERROR
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: timed out
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:123)
+	at PdpTestSuite.runTests(PdpTestSuite.java:82)
+	at PdpQ1Tests.main(PdpQ1Tests.java:67)
+Caused by: java.lang.RuntimeException: timed out
+	at PdpTestSuite.lambda$addExternalTestCase$5(PdpTestSuite.java:63)
+	at PdpTestSuite$$Lambda$1/321001045.get(Unknown Source)
+	at PdpTestSuite$TestCase.lambda$run$6(PdpTestSuite.java:121)
+	at PdpTestSuite$TestCase$$Lambda$2/142257191.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: fact2(11)... FAIL
+  actual:   0
+  expected: 39916800
+Running test: fib(7,1)... PASS
+Running test: insertionsort(2,20)... FAIL
+  actual:   java.lang.NullPointerException
+  expected: 907091414
+Running test: mergesort(1,20)... FAIL
+  actual:   java.lang.NullPointerException
+  expected: 900010104
+Running test: quicksort(3,12)... FAIL
+  actual:   java.lang.NullPointerException
+  expected: 910262731
+Running test: selectionsort(3,14)... FAIL
+  actual:   java.lang.NullPointerException
+  expected: 910262731
+Running test: sieve(1,100)... FAIL
+  actual:   java.lang.NullPointerException
+  expected: 25
+Running test: sumsq(25,3)... FAIL
+  actual:   301
+  expected: 325
+Running test: tail(why was 6 afraid of 7?)... FAIL
+  actual:   Exception in thread "main" java.lang.StackOverflowError
+  expected: 504
+Running test: vectors(618)... ERROR
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: timed out
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:123)
+	at PdpTestSuite.runTests(PdpTestSuite.java:82)
+	at PdpQ1Tests.main(PdpQ1Tests.java:67)
+Caused by: java.lang.RuntimeException: timed out
+	at PdpTestSuite.lambda$addExternalTestCase$5(PdpTestSuite.java:63)
+	at PdpTestSuite$$Lambda$1/321001045.get(Unknown Source)
+	at PdpTestSuite$TestCase.lambda$run$6(PdpTestSuite.java:121)
+	at PdpTestSuite$TestCase$$Lambda$2/142257191.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+1 success(es) 10 failure(s) 4 error(s) 15 test(s) run
