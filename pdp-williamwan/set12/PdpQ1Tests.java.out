@@ -1,0 +1,88 @@
+Running test: mainLoop(0, 3)... PASS
+Running test: sumSquaresLoop(0, 91)... PASS
+Running test: sumSquaresLoop2(0, 37)... PASS
+Running test: mainLoop(1, 3)... FAIL
+  actual:   0
+  expected: 1
+Running test: sumSquaresLoop(1, 91)... FAIL
+  actual:   91
+  expected: 92
+Running test: sumSquaresLoop2(1, 37)... FAIL
+  actual:   37
+  expected: 36
+Running test: mainLoop(2, 3)... PASS
+Running test: sumSquaresLoop(2, 91)... PASS
+Running test: sumSquaresLoop2(2, 37)... PASS
+Running test: mainLoop(3, 3)... FAIL
+  actual:   5
+  expected: 6
+Running test: sumSquaresLoop(3, 91)... FAIL
+  actual:   96
+  expected: 97
+Running test: sumSquaresLoop2(3, 37)... FAIL
+  actual:   32
+  expected: 31
+Running test: mainLoop(4, 3)... PASS
+Running test: sumSquaresLoop(4, 91)... PASS
+Running test: sumSquaresLoop2(4, 37)... PASS
+Running test: mainLoop(7, 3)... FAIL
+  actual:   27
+  expected: 28
+Running test: sumSquaresLoop(7, 91)... FAIL
+  actual:   118
+  expected: 119
+Running test: sumSquaresLoop2(7, 37)... FAIL
+  actual:   10
+  expected: 9
+Running test: mainLoop(14, 3)... PASS
+Running test: sumSquaresLoop(14, 91)... PASS
+Running test: sumSquaresLoop2(14, 37)... PASS
+Running test: mainLoop(21, 3)... FAIL
+  actual:   230
+  expected: 231
+Running test: sumSquaresLoop(21, 91)... FAIL
+  actual:   321
+  expected: 322
+Running test: sumSquaresLoop2(21, 37)... FAIL
+  actual:   -193
+  expected: -194
+Running test: mainLoop(28, 3)... PASS
+Running test: sumSquaresLoop(28, 91)... PASS
+Running test: sumSquaresLoop2(28, 37)... PASS
+Running test: mainLoop(35, 3)... FAIL
+  actual:   629
+  expected: 630
+Running test: sumSquaresLoop(35, 91)... FAIL
+  actual:   720
+  expected: 721
+Running test: sumSquaresLoop2(35, 37)... FAIL
+  actual:   -592
+  expected: -593
+Running test: mainLoop(42, 3)... PASS
+Running test: sumSquaresLoop(42, 91)... PASS
+Running test: sumSquaresLoop2(42, 37)... PASS
+Running test: mainLoop(49, 3)... FAIL
+  actual:   1224
+  expected: 1225
+Running test: sumSquaresLoop(49, 91)... FAIL
+  actual:   1315
+  expected: 1316
+Running test: sumSquaresLoop2(49, 37)... FAIL
+  actual:   -1187
+  expected: -1188
+Running test: mainLoop(56, 3)... PASS
+Running test: sumSquaresLoop(56, 91)... PASS
+Running test: sumSquaresLoop2(56, 37)... PASS
+Running test: mainLoop(63, 3)... FAIL
+  actual:   2015
+  expected: 2016
+Running test: sumSquaresLoop(63, 91)... FAIL
+  actual:   2106
+  expected: 2107
+Running test: sumSquaresLoop2(63, 37)... FAIL
+  actual:   -1978
+  expected: -1979
+Running test: mainLoop(70, 3)... PASS
+Running test: sumSquaresLoop(70, 91)... PASS
+Running test: sumSquaresLoop2(70, 37)... PASS
+24 success(es) 21 failure(s) 0 error(s) 45 test(s) run

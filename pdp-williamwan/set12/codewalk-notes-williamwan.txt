@@ -1,0 +1,30 @@
+TA-1 Name:- Rohit
+TA-2 Name:- Wenjun
+
+
+Student1 CCIS ID:- williamwan
+
+Question 1 :-
+
+Design Grade:- AB
+TA Comments on Design:-
+	1. The while loop in sumSquaresLoop should terminate when (n >= 1)
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked what is proper tail call, satisfactory answer.
+	2. Asked about given n=4 and n=5 as input, what the output should be.
+
+
+Question 2 :-
+
+Design Grade:- A
+TA Comments on Design:- 
+	1. Made all required reports and analyses.
+	2. Better to be clear the conclusion is only based on this particular benchmark.
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about based on the report.txt, which one is more efficient, garbage collection or explicit deallocation, satisfactory answer.
+	2. Asked about in general, which one is more efficient, garbage collection or explicit deallocation, satisfactory answer.
+

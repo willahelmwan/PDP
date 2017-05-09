@@ -1,0 +1,4 @@
+pdp-williamwan
+q1.rkt: +3 for color test failures due to initial state
+q1-bb.rkt: 11/25 tests passed -> 9/15 correct
+q2-bb.rkt: 4/15 tests passed -> 4/15 correct

@@ -1,0 +1,31 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname q1) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+;; Goal: create the function edit.
+
+(require rackunit)
+(require 2htdp/universe)    ; needed for key=?
+(require "extras.rkt")
+
+(check-location "02" "q1.rkt")
+
+(provide
+  make-editor
+  editor-pre
+  editor-post
+  editor?
+  edit)
+
+
+;; Still reading textbook and trying to figure out this problem. 
+
+;; DATA DEFINITION: none.
+
+;; cvolume: NonNegReal -> NonNegReal
+;; GIVEN: the length of a side of an equilateral cube
+;; RETURNS: the volume of the cube
+;; EXAMPLES:
+;; (cvolume 0.1) = 0.001
+;; (cvolume 2) = 8
+;; (cvolume 0) = 0
+;; STRATEGY: combine simpler functions

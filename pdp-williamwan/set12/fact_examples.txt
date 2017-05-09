@@ -1,0 +1,41 @@
+(define (fact n)
+	(if (= n 0)
+		1
+		(* n (fact (- n 1)))))
+		
+(define (fact-c n cont)
+	(if (= n 0)
+		(cont 1)
+		(fact-c (- n 1)
+				(lambda (v)
+						(cont (* n v))))))
+					
+					
+(define (fact-iter n)
+	(fact-loop n 1))
+
+(define (fact-loop n product)
+	(if (= n 0)
+		product
+		(fact-loop (- n 1)
+					(* n product))))
+					
+(define (fact-iter-c n cont)
+	(fact-loop-c n 1 (lambda (v) (cont v))))
+	
+(define (fact-loop-c n product cont)
+	(if (= n 0)
+		(cont product)
+		(fact-loop-c (- n 1)
+					(* n product)
+					(lambda (v) (cont v)))))
+					
+(define (fact-iter-c n cont)
+	(fact-loop-c n 1 cont))
+	
+(define (fact-loop-c n product cont)
+	(if (= n 0)
+		(cont product)
+		(fact-loop-c (- n 1)
+					(* n product)
+					cont)))

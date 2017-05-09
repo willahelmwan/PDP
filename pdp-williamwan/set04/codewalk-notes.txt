@@ -1,0 +1,32 @@
+TA-1 Name:- Wenjun 
+TA-2 Name:- Rohit
+
+
+
+Student1 CCIS ID:- williamwan
+
+Question 1 :
+
+Design Grade: AB 
+TA Comments on Design: 
+
+- Constructor template is incorrect.
+- Doodad deletion did not work properly. (The doodads that have same age can not be deleted together.)
+- dot-key function too long - readability can be improved
+
+
+Presentation Grade: B
+TA Comments on Presentation:
+- Changes made to data definition? Explained
+- world-after-tick : How aging event is handled when the world is paused? Incorrect answer given by the student
+
+Question 2 :
+
+Design Grade: A
+TA Comments on Design: 
+
+
+Presentation Grade: A
+TA Comments on Presentation:
+- Data definition? Explained
+- How overlapping is being checked with a ListOfFlapJack? Explained

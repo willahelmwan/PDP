@@ -1,0 +1,32 @@
+TA-1 Name:- Wenjun
+TA-2 Name:- Rohit
+
+
+
+Student1 CCIS ID:- williamwan
+
+Question 1 :
+
+Design Grade: AB
+TA Comments on Design: 
+- world-to-scene - should be broken into helpers 
+- dot-key-event-remove - can be broken into helpers
+
+- suggestion: better variable names for the argument 
+
+Presentation Grade: A 
+TA Comments on Presentation:
+- how does map work? explained well
+- explain selected-doodad 
+   followup: is lambda required? Answered after followups
+
+Question 2 :
+
+Design Grade: A
+TA Comments on Design: 
+- All recursions converted to HOFs.
+
+
+Presentation Grade: A
+TA Comments on Presentation:
+- Student explained filter well

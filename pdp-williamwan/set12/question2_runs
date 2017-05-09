@@ -1,0 +1,170 @@
+Question 2
+bash-4.3$ time gcc gcbench.c; ./a.out
+
+real	0m0.069s
+user	0m0.029s
+sys	0m0.015s
+Garbage Collector Test
+ Live storage will peak at 10291408 bytes.
+
+ Stretching memory with a binary tree of depth 18
+ Creating a long-lived binary tree of depth 16
+ Creating a long-lived array of 500000 doubles
+Creating 33824 trees of depth 4
+Creating 8256 trees of depth 6
+Creating 2052 trees of depth 8
+Creating 512 trees of depth 10
+Creating 128 trees of depth 12
+Creating 32 trees of depth 14
+Creating 8 trees of depth 16
+491 msec
+
+bash-4.3$ time java GCBench
+Garbage Collector Test
+ Stretching memory with a binary tree of depth 18
+ Total memory available=251658240 bytes  Free memory=249015648 bytes
+ Creating a long-lived binary tree of depth 16
+ Creating a long-lived array of 500000 doubles
+ Total memory available=251658240 bytes  Free memory=223798096 bytes
+Creating 33824 trees of depth 4
+	Top down construction took 14msecs
+	Bottom up construction took 13msecs
+Creating 8256 trees of depth 6
+	Top down construction took 9msecs
+	Bottom up construction took 10msecs
+Creating 2052 trees of depth 8
+	Top down construction took 6msecs
+	Bottom up construction took 9msecs
+Creating 512 trees of depth 10
+	Top down construction took 13msecs
+	Bottom up construction took 10msecs
+Creating 128 trees of depth 12
+	Top down construction took 5msecs
+	Bottom up construction took 6msecs
+Creating 32 trees of depth 14
+	Top down construction took 5msecs
+	Bottom up construction took 10msecs
+Creating 8 trees of depth 16
+	Top down construction took 5msecs
+	Bottom up construction took 5msecs
+ Total memory available=449839104 bytes  Free memory=340297304 bytes
+Completed in 143ms.
+
+real	0m0.204s
+user	0m0.282s
+sys	0m0.058s
+
+bash-4.3$ time java -Xmx64M GCBench
+Garbage Collector Test
+ Stretching memory with a binary tree of depth 18
+ Total memory available=64487424 bytes  Free memory=63480408 bytes
+ Creating a long-lived binary tree of depth 16
+ Creating a long-lived array of 500000 doubles
+ Total memory available=64487424 bytes  Free memory=39112552 bytes
+Creating 33824 trees of depth 4
+	Top down construction took 13msecs
+	Bottom up construction took 11msecs
+Creating 8256 trees of depth 6
+	Top down construction took 11msecs
+	Bottom up construction took 10msecs
+Creating 2052 trees of depth 8
+	Top down construction took 10msecs
+	Bottom up construction took 9msecs
+Creating 512 trees of depth 10
+	Top down construction took 10msecs
+	Bottom up construction took 9msecs
+Creating 128 trees of depth 12
+	Top down construction took 8msecs
+	Bottom up construction took 8msecs
+Creating 32 trees of depth 14
+	Top down construction took 8msecs
+	Bottom up construction took 8msecs
+Creating 8 trees of depth 16
+	Top down construction took 9msecs
+	Bottom up construction took 12msecs
+ Total memory available=61865984 bytes  Free memory=29419488 bytes
+Completed in 164ms.
+
+real	0m0.218s
+user	0m0.438s
+sys	0m0.041s
+
+bash-4.3$ time larceny --r7rs --program gcbenchJ.scm
+The garbage collector should touch about 64 megabytes of heap storage.
+The use of more or less memory will skew the results.
+Running GCBench:1:18...
+Garbage Collector Test
+ Stretching memory with a binary tree of depth 18
+ Total memory available= ???????? bytes  Free memory= ???????? bytes
+ Creating a long-lived binary tree of depth 16
+ Creating a long-lived array of 524284 inexact reals
+ Total memory available= ???????? bytes  Free memory= ???????? bytes
+Creating 33824 trees of depth 4
+Creating 8256 trees of depth 6
+Creating 2052 trees of depth 8
+Creating 512 trees of depth 10
+Creating 128 trees of depth 12
+Creating 32 trees of depth 14
+Creating 8 trees of depth 16
+ Total memory available= ???????? bytes  Free memory= ???????? bytes
+Completed in 0.516621 seconds.
+
+real	0m1.997s
+user	0m1.833s
+sys	0m0.075s
+
+bash-4.3$ time gcc permNKL.c; ./a.out
+
+real	0m0.080s
+user	0m0.034s
+sys	0m0.016s
+m = 200;
+n = 9;
+k = 10;
+l = 1;
+0
+17347 msec
+
+bash-4.3$ time java PermNKL
+m = 200
+n = 9
+k = 10
+l = 1
+0
+6116 msec
+ Total memory available=1771569152 bytes  Free memory=854562448 bytes
+
+real	0m10.502s
+user	1m9.169s
+sys	0m0.759s
+
+bash-4.3$ time java -Xmx500M PermNKL
+m = 200
+n = 9
+k = 10
+l = 1
+0
+20337 msec
+ Total memory available=492306432 bytes  Free memory=168184576 bytes
+
+real	0m24.657s
+user	2m58.398s
+sys	0m0.360s
+
+bash-4.3$ time larceny --r7rs --program permJ.scm
+Running 200perm9:10:1...
+Completed in 19.37183 seconds.
+
+real	0m22.014s
+user	0m21.050s
+sys	0m0.631s
+
+bash-4.3$ time larceny --stopcopy --load 4 --r7rs --program permJ.scm
+Running 200perm9:10:1...
+Completed in 11.684784 seconds.
+
+real	0m14.260s
+user	0m12.859s
+sys	0m0.916s
+
+

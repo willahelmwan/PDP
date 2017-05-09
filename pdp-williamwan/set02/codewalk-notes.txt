@@ -1,0 +1,33 @@
+TA-1 Name:- Rohit
+TA-2 Name:- Wenjun
+
+
+
+
+Student1 CCIS ID:-
+
+Question 1 :-
+
+Design Grade:-AB
+TA Comments on Design:-
+	- Stay within 80 characters width limit
+	1. Data definitions should be at the beginning of the program - not for individual functions
+	2. Should follow one function one task design recipe by defining more helper functions - edit function
+	3. 19, 36 - Could modify NonEmptyStr in contracts by adding a Where-clause to restrict the given String
+	4. edit function - 2-3 examples should suffice
+
+Presentation Grade:-A
+TA Comments on Presentation:-
+	Student's presentation was good
+
+Question 2 :-
+
+Design Grade:-A
+TA Comments on Design:-
+	- Stay within 80 characters width limit
+	1. Try to choose better function names in observer template (observer template is corrensponding to a typical data type rather than the program)
+	2. Should follow one function one task design recipe by defining more helper functions
+
+Presentation Grade:-A
+TA Comments on Presentation:-
+	Student's presentation was good

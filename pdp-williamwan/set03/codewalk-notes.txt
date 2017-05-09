@@ -1,0 +1,31 @@
+TA-1 Name:- Wenjun
+TA-2 Name:- Sankar
+
+
+
+
+Student1 CCIS ID:- williamwan
+
+Question 1 :-
+
+Design Grade:- AB
+TA Comments on Design:-
+> color is not a string data type.
+> next-doodad function is a long function. Simplify the function by breaking it.
+> should follow one function one task.
+
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+> Good. Was able to explain properly.
+
+Question 2 :-
+
+Design Grade:- A
+TA Comments on Design:-
+> Good understanding of the problem set.
+
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+> was able to explain all questions asked. 
