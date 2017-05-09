@@ -1,0 +1,60 @@
+TA-1 Name:- Vinay Nadagoud
+TA-2 Name:- Rahul Pyne
+
+
+
+
+Student1 CCIS ID:- manishyadav
+
+Question 1 :-
+
+Design Grade:- A
+TA Comments on Design:- 
+lambda functions had its contract.
+Do go through course materials properly
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+How did you iterate through the graph DFS or BFS?
+Wasn't confident about the answer. Had to be prodded to get the answer.
+
+Question 2 :-
+
+Design Grade:- A
+TA Comments on Design:-
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+Explained the changes they implemented.
+what is the halting meeasure of flight itinerary
+explained the answer properly
+
+What is invariant?
+Could not explain it properly.
+
+Student2 CCIS ID:- williamwan
+
+Question 1 :-
+
+Design Grade:- A
+TA Comments on Design:-
+lambda functions had its contract.
+Do go through course materials properly
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+Did explain the functionality of the program properly about how they get the shortest path.
+
+How did you iterate through the graph DFS or BFS?
+Wasn't confident about the answer. Had to be prodded to get the answer.
+
+Question 2 :-
+
+Design Grade:- A
+TA Comments on Design:-
+
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+what is a context arguement?
+Not confident about the answer. Had to be prodded for the answer

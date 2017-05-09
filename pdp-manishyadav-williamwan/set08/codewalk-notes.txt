@@ -1,0 +1,67 @@
+TA-1 Name:- Wenjun
+TA-2 Name:- Rohit
+
+
+
+
+Student1 CCIS ID:- manishyadav
+
+Question 1 :-
+
+Design Grade:- A
+TA Comments on Design:-
+- interpretation of weight node in structure can be improved
+- function redability can be improved - fastest-nodes
+
+- How was the problem solved? Answered
+- fastest itinerary: explained
+
+
+Suggestion: Please include a call-graph 
+  
+
+
+Presentation Grade:- AB
+TA Comments on Presentation:-
+- explain fastest-path: student is confused
+  not sure about the working of the function - multiple followups required
+- HOF handling of lists is not very clear - use of filter in this case
+- fastest-node? - could give clearer, to the point explanations
+
+
+Question 2 :-
+
+Design Grade:- A
+TA Comments on Design:-
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+
+
+Student2 CCIS ID:- williamwan
+
+Question 1 :-
+
+Design Grade:- A
+TA Comments on Design:-
+- interpretation of weight node in structure can be improved
+- function redability can be improved - fastest-nodes
+
+- How was the problem solved? Answered
+- explained can-get-there? 
+  Follow-up: run time for all-children-ap? Answered
+- explained how flights are being filtered well
+ 
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+
+
+
+Question 2 :-
+
+Design Grade:- A
+TA Comments on Design:-
+
+Presentation Grade:- A
+TA Comments on Presentation:-

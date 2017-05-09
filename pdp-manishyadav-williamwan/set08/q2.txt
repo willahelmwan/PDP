@@ -1,0 +1,30 @@
+As defined in q1.rkt, the three provided functions
+(can-get-there?, fastest-itinerary, and travel-time) all run in
+O(n^3) time.
+
+The benchmark0 benchmark calls both can-get-there? and
+travel-time O(n^2) times, so benchmark0 runs in O(n^5)
+time.
+
+CPU times for benchmark0, measured on MacBook (1.6 GHz Intel Core i5):
+
+ n    (benchmark0 n)    ratio to previous timing     (n^5 / (n-2)^5)
+--------------------------------------------------------------------
+10            630
+12           1323                2.10                     2.49
+14           2330                1.76                     2.16
+16           3783                1.62                     1.95
+18           6216                1.64                     1.80
+20           9701                1.56                     1.69
+22          13766                1.42                     1.61
+24          20082                1.46                     1.55
+26          28424                1.42                     1.49
+28          37624                1.32                     1.45
+30          46962                1.25                     1.41
+32          68627                1.46                     1.38
+34          84573                1.23                     1.35
+36         101113                1.20                     1.33
+38         129315                1.28                     1.31
+40         161794                1.25                     1.29
+42         192649                1.19                     1.28
+

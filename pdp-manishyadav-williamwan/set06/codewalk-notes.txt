@@ -1,0 +1,58 @@
+TA-1 Name:- Wenjun
+TA-2 Name:- Rohit
+
+
+Student1 CCIS ID:- manishyadav
+
+Question 1 :-
+
+Design Grade:- A
+TA Comments on Design:-
+
+
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+
+
+
+Question 2 :-
+
+Design Grade:- A
+TA Comments on Design:-
+- data definitions: itenerary template can be improved
+- fastest-itinerary - readability can be improved - should be broken into helpers
+- Mutual recursion mention the Halting measure
+- connection between inputs need to be mentioned in the WHERE clause 
+
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+- explained fast-itinerary
+
+
+Student2 CCIS ID:- williamwan
+
+Question 1 :-
+
+Design Grade:- A
+TA Comments on Design:-
+
+
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+
+Question 2 :-
+
+Design Grade:- A
+TA Comments on Design:- 
+- data definitions: itenerary template can be improved
+- fastest-itinerary - readability can be improved - should be broken into helpers
+- Mutual recursion mention the Halting measure
+- connection between inputs need to be mentioned in the WHERE clause 
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+- Data structs for q1? explained
+- can-get-there? explained

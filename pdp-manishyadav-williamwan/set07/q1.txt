@@ -1,0 +1,1 @@
+Our q1.rkt ran with the given flight.rkt file without any mistakes. All test passed. We did not make any changes that are necessary to respect the abstraction barrier associated with the ADTs. 
